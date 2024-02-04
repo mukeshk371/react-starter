@@ -14,6 +14,6 @@
 ### Next JS has it's own `<Image/>` tag for image rendering.
 - It can be imported by using `import Image from "next/image";`
 - It renders very fast as compared to `<img/>` tag.
-- Next JS doesn't allows any external "url" for image tag until we declare image domain inside `next.config.js or next.config.mjs` like:
+**Note: Next JS doesn't allows any external "url" for image tag until we declare image domain inside `next.config.js or next.config.mjs` like:**
    `const nextConfig = {images: {domains: ['www.robolab.in'],},};`
 

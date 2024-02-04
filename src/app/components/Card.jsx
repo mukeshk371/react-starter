@@ -27,7 +27,7 @@ export default function Card() {
         height={person.imgHeight}
         className="rounded-[16px] my-[20px]"
       />
-      <ul className="pl-[26px] list-outside list-image-[url(../../public/icons/arrow-right.svg)] font-semibold text-[18px]">
+      <ul className="pl-[26px] list-outside list-image-[url(/icons/arrow-right.svg)] font-semibold text-[18px]">
         <li>Indian nuclear physicist </li>
         <li>Who is widely credited as the "father of the Indian nuclear programme". </li>
         <li>Compton scattering, R-process, and the advancement of nuclear physics.</li>
