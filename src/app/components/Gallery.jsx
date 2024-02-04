@@ -1,19 +1,14 @@
-import Image from "next/image";
 import React from "react";
+import Card from "./Card";
 
-export const Profile = () => {
+export const Gallery = () => {
   return (
     <>
-      <div>
-        <Image
-          src="https://www.robolab.in/wp-content/uploads/2017/12/Homi-J.-Bhabha.gif"
-          alt="Homi J Bhabha"
-          width={500}
-          height={300}
-        />
+      <div className="grid grid-cols-3 gap-[20px] p-[20px]">
+        <Card />
       </div>
     </>
   );
 };
 
-export default Profile;
+export default Gallery;
