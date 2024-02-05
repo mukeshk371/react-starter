@@ -1,6 +1,22 @@
 import React from "react";
 import Card from "./Card";
 import CardWithProps from "./CardWithProps";
+import { scientistsList } from "@/utils/data";
+import CardRenderingWithArray from "./CardRenderingWithArray";
+
+const CardList = ({ data }) => (
+  <>
+    {data.map((item, index) => (
+      <CardRenderingWithArray
+        key={index}
+        name={item.name}
+        theme={item.theme}
+        imgSrc={item.imgSrc}
+        imgAlt={item.imgAlt}
+      />
+    ))}
+  </>
+);
 
 export const Gallery = () => {
   return (
@@ -15,6 +31,7 @@ export const Gallery = () => {
           details_2="father of the Indian Space programme"
           details_3="Who initiated space research and helped to develop nuclear power in India"
         />
+        <CardList data={scientistsList} />
       </div>
     </>
   );
