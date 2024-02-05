@@ -24,8 +24,16 @@ const CardList = ({ data }) => (
 export const Gallery = () => {
   return (
     <>
+      <h1 className="font-extrabold text-[30px] p-[20px] pb-0">
+        Card by using Object
+      </h1>
       <div className="grid grid-cols-2 gap-[20px] p-[20px]">
         <Card />
+      </div>
+      <h1 className="font-extrabold text-[30px] p-[20px] pb-0">
+        Card by using Props
+      </h1>
+      <div className="grid grid-cols-2 gap-[20px] p-[20px]">
         <CardWithProps
           name="Dr. Vikram Sarabhai"
           imgSrc="https://cdn.britannica.com/98/239498-050-C61D39D6/Vikram-Sarabhai-Indian-physicist-and-industrialist.jpg"
@@ -34,10 +42,17 @@ export const Gallery = () => {
           details_2="father of the Indian Space programme"
           details_3="Who initiated space research and helped to develop nuclear power in India"
         />
-
+      </div>
+      <h1 className="font-extrabold text-[30px] p-[20px] pb-0">
+        Card by using Array loop
+      </h1>
+      <div className="grid grid-cols-2 gap-[20px] p-[20px]">
         <CardList data={scientistsList} />
-
-        {/* Whthout using CardList */}
+      </div>
+      <h1 className="font-extrabold text-[30px] p-[20px] pb-0">
+        Card by using Array loop without CardList
+      </h1>
+      <div className="grid grid-cols-2 gap-[20px] p-[20px]">
         {scientistsList.map((item, index) => (
           <CardRenderingWithArray
             key={index}
